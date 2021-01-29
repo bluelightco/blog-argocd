@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-  name: nginx
+    app: grafana
+  name: grafana
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: grafana
   template:
     metadata:
       labels:
-        app: nginx
+        app: grafana
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - image: grafana/grafana:latest
+        name: grafana
