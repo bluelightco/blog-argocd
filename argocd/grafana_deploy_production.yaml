@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana-production
+  namespace: argocd
+
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/florianpialoux/argocd-gke.git'
+    path: manifest
+    targetRevision: HEAD
+  destination:
+    namespace: default
+    name: cluster-production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
