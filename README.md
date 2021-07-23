@@ -1,2 +1,2 @@
-# ArgoCD Demo
-Just a repo used for ArgoCD demo.
+# ArgoCD blogpost
+Just a repo used for ArgoCD blog post.

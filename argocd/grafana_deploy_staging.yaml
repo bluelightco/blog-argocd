@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/florianpialoux/argocd-demo.git'
+    repoURL: 'https://github.com/bluelightco/blog-argocd.git'
     path: manifest
     targetRevision: HEAD
   destination:
